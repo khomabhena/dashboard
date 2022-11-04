@@ -9,7 +9,7 @@
 .container {
     display: grid;
     grid-template-columns: minmax(20%, 1fr) 3fr;
-    grid-template-rows: repeat(7, 100px);
+    grid-template-rows: 1fr 4fr;
 }
 
 .container > div {
@@ -22,7 +22,7 @@
 
 .sidebar {
     grid-column: 1 / 2;
-    grid-row: 1 / 6;
+    grid-row: 1 / 5;
     background-color: #10b981;
     color: #ecfdf5;
     gap: 1rem;
@@ -31,6 +31,7 @@
     flex-direction: column;
     justify-content: space-around;
     height: 100vh;
+    /* overflow: scroll; */
 }
 
 .menu-item {
@@ -67,7 +68,70 @@
     font-weight: 200;
 }
 
-.content {
+
+.header {
+    height: fit-content;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    background-color: #ecfdf5;
+    height: 100%;
+    color: #111827;
+}
+
+
+
+.action-buttons {
+    grid-column: 2 / 3;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin: 0 4rem;
+}
+
+.search > input {
+    border-radius: 24px;
+    border: 0;
+    background-color: #a7f3d0;
+    padding: 4px 8px;
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    color: 111827;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    font-weight: 400;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
+.action-buttons > button {
+    background-color: #6ee7b7;
+    border: 0;
+    padding: .2rem 2rem;
+    font-size: 1rem;
+    color: #ecfdf5;
+    border-radius: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+.content {
+    /* display: grid;
+    grid-template-columns: 2fr 1fr; */
 }
