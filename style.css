@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;700&family=Mulish:wght@200;300;400;500;600;800;900&family=Nunito:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(20%, 1fr) 3fr;
+    grid-template-rows: repeat(7, 100px);
+}
+
+.container > div {
+    border: 1px solid black;
+}
+
+.header {
+    grid-column: 2 / 3;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    background-color: #10b981;
+    color: #ecfdf5;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .6rem;
+}
+
+.menu-item > span {
+    margin: 0 1rem;
+}
+
+.menu-one {
+    margin-left: -1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.menu-one > span {
+    font-size: 1rem;
+    color: red;
+}
+
+.menu-two {
+    font-weight: 500;
+}
+
+.menu-three {
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
