@@ -141,14 +141,38 @@
 }
 
 
-.content {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    padding: 2rem 1rem;
-    color: var(--black);
-    background-color: var(--light-grey);
-}
 
 .content > h4 {
     font-weight: 500;
+    height: fit-content;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50px;
+    padding: 2rem 1rem;
+    color: var(--black);
+    background-color: var(--light-grey);
+    gap: 1rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
+    padding: 2rem 2rem 0;
+    border-radius: 12px;
+    height: fit-content;
+}
+
+.card-icons {
+    margin: 2rem 0 1rem;
+    align-self: flex-end;
 }
