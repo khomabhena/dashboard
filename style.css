@@ -38,6 +38,15 @@
     flex-direction: row;
     align-items: center;
     margin: .6rem;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+    padding: .1rem;
+}
+
+.menu-item:hover {
+    transform: scale(1.2);
+    background-color: #6ee7b7;
+    border-radius: 12px;
 }
 
 .menu-item > span {
@@ -50,16 +59,12 @@
     font-weight: 600;
 }
 
-.menu-one > span {
-    font-size: 1rem;
-    color: red;
-}
-
 .menu-two {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .menu-three {
+    font-weight: 200;
 }
 
 .content {
