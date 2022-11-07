@@ -176,3 +176,21 @@
     margin: 2rem 0 1rem;
     align-self: flex-end;
 }
+
+.announcements .card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
+    padding: 2rem 2rem;
+    border-radius: 12px;
+    height: fit-content;
+    gap: 1rem;
+}
+
+.announcements h4 {
+    font-size: .8rem;
+}
+
+.announcements p {
+    font-size: .8rem;
+}
